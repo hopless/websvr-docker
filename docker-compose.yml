@@ -1,14 +1,14 @@
 version: '2.0'
 services:
   web:
-    image: my_site
-    container_name: wbsr
+    image: img_wbsr
+    container_name: cont_wbsr
     ports:
         - 8090:80
         - 3309:3306
     volumes:
       - ./core/www:/var/www/site
-      - ./core/:  /var/lib/mysql
+      - ./core:/var/lib/mysql
      
     environment: 
       MYSQL_ROOT_PASSWORD: bob

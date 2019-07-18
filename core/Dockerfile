@@ -29,7 +29,7 @@ ENV APACHE_PID_FILE /var/run/apache2.pid
 EXPOSE 80 3306
 
 # Copy this repo into place.
-ADD www /var/www/site
+ADD www /var/www/html
 
 # By default start up apache in the foreground, override with /bin/bash for interative.
 CMD /usr/sbin/apache2ctl -D FOREGROUND
