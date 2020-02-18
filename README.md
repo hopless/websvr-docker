@@ -1,2 +1,2 @@
 # websvr-docker
-Testing webserver in dockering  
+Testing webserver in docker
